@@ -156,7 +156,7 @@ async def process_pano(session, loc, pano_id):
 
         # Cleanup: remove whole pano folder + temp tiles
         shutil.rmtree(pano_dir, ignore_errors=True)
-        shutil.rmtree(os.path.join(TEMP_DIR, pano_id), ignore_errors=True)
+        shutil.rmtree(TEMP_DIR, ignore_errors=True)
         logger.info("✓ Cleaned up pano folder and temp tiles")
 
 
